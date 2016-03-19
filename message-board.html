@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Доска обьявлений</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+	<header class="head">
+		<div class="container">
+			<!-- LOGO -->
+			<div class="logo-block">
+				<div class="logo-wrap">
+					<a href=""><img src="img/logo.png" alt="Carring"></a>
+				</div>
+
+				<form action="#" class="location">
+					<select name="location" id="location">
+						<option selected="selected">Москва</option>
+						<option>Питер</option>
+					</select>
+				</form>
+
+			</div>
+
+			<!-- Main menu button-->
+			<div class="main-mnu-btn">
+				<span class="toggle-mnu"><span></span></span>
+				<span>Меню</span>
+			</div>
+
+			<!-- The Registration Menu -->
+			<nav class="reg-mnu">
+				<ul>
+					<li class="active">
+						<a class="a-service" href="#"><i class="fa fa-plus-circle"></i> Автосервисам</a>
+					</li>
+					<li><a href="#">Разместить заявку на ремонт</a></li>
+					<li><a href="#">Как это работает?</a></li>
+					<li><a href="#"><i class="fa fa-search"></i> Заказы</a></li>
+					<li>
+						<a class="reg" href="#">Регистрация&ensp;</a> |
+						<a class ="entr" href="#">Вход&ensp;</a>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+
+		<!-- Main menu -->
+		<nav class="main-mnu-box">
+			<ul class="main-mnu">                                                      
+				<li><a href="#">О проекте</a></li>
+				<li><a href="#">Блог</a></li>
+				<li><a href="#">Форум</a></li>
+				<li><a href="#">Вопрос-­ответ</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">ЧАВО</a></li>
+				<li><a href="#">Автосервисы</a></li>
+				<li><a href="#">Объявления</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<!-- Search Block -->
+	<div class="container-s serch-block">	
+		<form action="#" class="adv-search">
+			
+			<div class="srch-panel">
+				<select name="spares" class="spares" id="spares">
+					<option selected="selected">Запчасти и аксессуары</option>
+					<option>Запчасть-1</option>
+					<option>Запчасть-2</option>
+					<option>Запчасть-3</option>
+					<option>Запчасть-4</option>
+					<option>Запчасть-5</option>
+				</select>
+
+				<input type="search" placeholder="Поиск по объявлениям">
+
+				<select name="all-russ" class="all-russ" id="all-russ">
+					<option selected="selected">По всей России</option>
+					<option>Город-1</option>
+					<option>Город-2</option>
+					<option>Город-3</option>
+					<option>Город-4</option>
+					<option>Город-5</option>
+				</select>
+
+				<input type="submit" value="Найти">
+			</div>
+
+			<div class="check">
+				<label>
+					<input type="checkbox" name="only-name" value="yes" checked>искать только в названиях
+				</label>
+				<label>
+					<input type="checkbox" name="only-photo" value="yes" checked>только с фото
+				</label>
+			</div>
+
+			<select name="view-prod" class="view-prod" id="view-prod">
+				<option selected="selected">Вид товара</option>
+				<option>Вид товара-1</option>
+				<option>Вид товара-2</option>
+				<option>Вид товара-3</option>
+				<option>Вид товара-4</option>
+				<option>Вид товара-5</option>
+			</select>
+
+		</form>
+
+		<!-- Searching Info-->
+		<div class="container-s">
+			<ul class="breadcrumbs clearfix">
+				<li><a href="#">Все объявления в России </a>&emsp;/&emsp;</li>
+				<li><a href="#">Транспорт</a>&emsp;/&emsp;</li>
+				<li>Запчасти и аксессуары <span class="count-found">7 895 056</span></li>
+			</ul>
+
+			<div class="results-info">
+				<ul class="info-item">
+					<li><a href="#">Запчасти</a> <span class="count-found">5 891 531</span></li>
+					<li><a href="#">Аксессуары</a> <span class="count-found">313 260</span></li>
+					<li><a href="#">GPS-навигаторы</a> <span class="count-found">13 673</span></li>
+					<li><a href="#">Автокосметика и автохимия</a> <span class="count-found">56 842</span></li>
+				</ul>
+
+				<ul class="info-item">
+					<li><a href="#">Аудио- и видеотехника</a> <span class="count-found"> 159 145</span></li>
+					<li><a href="#">Багажники и фаркопы</a> <span class="count-found"> 52 473</span></li>
+					<li><a href="#">Инструменты</a> <span class="count-found"> 44 515</span></li>
+					<li><a href="#">Прицепы</a> <span class="count-found"> 18 296</span></li>
+				</ul>
+
+				<ul class="info-item">
+					<li><a href="#">Противоугонные устройства</a> <span class="count-found"> 24 898</span></li>
+					<li><a href="#">Тюнинг</a> <span class="count-found"> 153 789</span></li>
+					<li><a href="#">Шины, диски и колёса</a> <span class="count-found"> 1 117 932</span></li>
+					<li><a href="#">Экипировка</a> <span class="count-found"> 48 698</span></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Searching Results -->
+	<div class="results-wrap">
+		<div class="container">
+			<div class="srch-results">
+
+				<div class="sort-panel clearfix">
+					<form action="#" class="sort-box-1">
+						<div id="sort-res-1" class="sort-res-1">
+							<input type="radio" id="all-sort" name="radio" checked="checked"><label for="all-sort">Все</label>
+							<input type="radio" id="private-sort" name="radio"><label for="private-sort">Частные</label>
+							<input type="radio" id="business-sort" name="radio"><label for="business-sort">Бизнес</label>
+						</div>
+					</form>
+
+					<!-- Вид отображения -->
+					<form action="#" class="sort-box-2">
+						<div id="sort-res-2" class="sort-res-2">
+							<input type="radio" id="squares-sort" name="radio"><label for="squares-sort" class="squares-sort">&nbsp;</label>
+							<input type="radio" id="list-sort" name="radio" checked="checked"><label for="list-sort" class="list-sort">&nbsp;</label>
+							<input type="radio" id="-sort" name="radio"><label for="-sort" class="-sort">&nbsp;</label>
+						</div>
+
+						<select name="view-prod" class="date-sort" id="date-sort">
+							<option selected="selected">По дате</option>
+							<option>По дате-2</option>
+							<option>По дате-3</option>
+						</select>
+					</form>
+				</div>
+
+				<!-- RESULTS -->
+				<div class="results-sort">
+
+					<div class="box clearfix">
+						<div class="result-item s-list">
+							<div class="img-wrap">
+								<img src="img/service-result.jpg" alt="service">
+							</div>
+							<div class="descr">
+								<div class="title-s">
+									<i class="fa fa-star-o"></i><h3><a href="advertisement.html">Кпп ВАЗ 2101 - 2107 - 2108 - 2115, Нива, Газель</a></h3>
+								</div>
+								<span class="price">2 500 руб</span>
+								<span class="shop">Магазин</span>
+								<span class="city">Москва</span>
+								<span class="time">Сегодня 16:45</span>
+							</div>
+						</div>
+
+						<div class="result-item s-list">
+							<div class="img-wrap">
+								<img src="img/service-result.jpg" alt="service">
+							</div>
+							<div class="descr">
+								<div class="title-s">
+									<i class="fa fa-star-o"></i><h3><a href="advertisement.html">Кпп ВАЗ 2101 - 2107 - 2108 - 2115, Нива, Газель</a></h3>
+								</div>
+								<span class="price">2 500 руб</span>
+								<span class="shop">Магазин</span>
+								<span class="city">Москва</span>
+								<span class="time">Сегодня 16:45</span>
+							</div>
+						</div>
+
+						<div class="result-item s-list">
+							<div class="img-wrap">
+								<img src="img/service-result.jpg" alt="service">
+							</div>
+							<div class="descr">
+								<div class="title-s">
+									<i class="fa fa-star-o"></i><h3><a href="advertisement.html">Кпп ВАЗ 2101 - 2107 - 2108 - 2115, Нива, Газель</a></h3>
+								</div>
+								<span class="price">2 500 руб</span>
+								<span class="shop">Магазин</span>
+								<span class="city">Москва</span>
+								<span class="time">Сегодня 16:45</span>
+							</div>
+						</div>
+
+						<div class="result-item s-list">
+							<div class="img-wrap">
+								<img src="img/service-result.jpg" alt="service">
+							</div>
+							<div class="descr">
+								<div class="title-s">
+									<i class="fa fa-star-o"></i><h3><a href="advertisement.html">Кпп ВАЗ 2101 - 2107 - 2108 - 2115, Нива, Газель</a></h3>
+								</div>
+								<span class="price">2 500 руб</span>
+								<span class="shop">Магазин</span>
+								<span class="city">Москва</span>
+								<span class="time">Сегодня 16:45</span>
+							</div>
+						</div>
+
+						<div class="result-item s-list">
+							<div class="img-wrap">
+								<img src="img/service-result.jpg" alt="service">
+							</div>
+							<div class="descr">
+								<div class="title-s">
+									<i class="fa fa-star-o"></i><h3><a href="advertisement.html">Кпп ВАЗ 2101 - 2107 - 2108 - 2115, Нива, Газель</a></h3>
+								</div>
+								<span class="price">2 500 руб</span>
+								<span class="shop">Магазин</span>
+								<span class="city">Москва</span>
+								<span class="time">Сегодня 16:45</span>
+							</div>
+						</div>
+
+						<div class="result-item s-list">
+							<div class="img-wrap">
+								<img src="img/service-result.jpg" alt="service">
+							</div>
+							<div class="descr">
+								<div class="title-s">
+									<i class="fa fa-star-o"></i><h3><a href="advertisement.html">Кпп ВАЗ 2101 - 2107 - 2108 - 2115, Нива, Газель</a></h3>
+								</div>
+								<span class="price">2 500 руб</span>
+								<span class="shop">Магазин</span>
+								<span class="city">Москва</span>
+								<span class="time">Сегодня 16:45</span>
+							</div>
+						</div>
+					</div>
+
+					<nav>
+						<ul class="pagination">
+							<li class="prev"><a href="#"><i class="fa fa-angle-left"></i></a></li>
+							<li><a href="#">1</a></li>
+							<li class="active"><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+							<li class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li>
+						</ul>
+					</nav>
+
+				</div>
+
+			</div>
+
+			<div class="banners">
+				<a href="#"><img src="img/banners.jpg" alt="Banner"></a>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="main-foot clearfix">
+
+				<div class="f-info-item">
+					<h5>О нас</h5>
+					<ul>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">dolor sit amet,</a></li>
+						<li><a href="#">consectetur</a></li>
+						<li><a href="#">adipisicing elit,</a></li>
+						<li><a href="#">sed do eiusmod</a></li>
+					</ul>
+				</div>
+
+				<div class="f-info-item">
+					<h5>Связь с нами</h5>
+					<ul>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">dolor sit amet,</a></li>
+						<li><a href="#">consectetur</a></li>
+						<li><a href="#">adipisicing elit,</a></li>
+						<li><a href="#">sed do eiusmod</a></li>
+					</ul>
+				</div>
+
+				<div class="f-info-item">
+					<h5>Автосервисам</h5>
+					<ul>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">dolor sit amet,</a></li>
+						<li><a href="#">consectetur</a></li>
+						<li><a href="#">adipisicing elit,</a></li>
+						<li><a href="#">sed do eiusmod</a></li>
+					</ul>
+				</div>
+
+				<div class="f-info-item">
+					<h5>Информация</h5>
+					<ul>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">dolor sit amet,</a></li>
+						<li><a href="#">consectetur</a></li>
+						<li><a href="#">adipisicing elit,</a></li>
+						<li><a href="#">sed do eiusmod</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="f-bottom-line clearfix">
+
+				<div class="copy">
+					<h5>"Название"</h5>
+					<p>все права защищены</p>
+				</div>
+
+				<div class="f-soc-box">
+					<ul>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-vk"></i></a></li>
+					</ul>
+				</div>
+
+				<div class="f-phones">
+					<p>Звонки по России бесплатно <br>+7 (495) 937 - 99- 92-99</p>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/jquery-ui/jquery-ui.min.js"></script>
+	
+	<script src="js/common.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Мои сообщения</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.css">
+
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+	<header class="head">
+		<div class="container">
+			<!-- LOGO -->
+			<div class="logo-block">
+				<div class="logo-wrap">
+					<a href=""><img src="img/logo.png" alt="Carring"></a>
+				</div>
+
+				<form action="#" class="location">
+					<select name="location" id="location">
+						<option selected="selected">Москва</option>
+						<option>Питер</option>
+					</select>
+				</form>
+
+			</div>
+
+			<!-- Main menu button-->
+			<div class="main-mnu-btn">
+				<span class="toggle-mnu"><span></span></span>
+				<span>Меню</span>
+			</div>
+
+			<!-- The Registration Menu -->
+			<nav class="reg-mnu pers-cab">
+				<ul>
+					<li class="active">
+						<a class="a-service" href="#"><i class="fa fa-plus-circle"></i> Автосервисам</a>
+					</li>
+					<li><a href="#">Разместить заявку на ремонт</a></li>
+					<li><a href="#">Как это работает?</a></li>
+					<li><a href="#"><i class="fa fa-search"></i> Заказы</a></li>
+
+					<li class="login-box">
+						<span class="user">
+							<i class="fa fa-user"></i>&emsp;Дмитрий Денисов <i class="fa fa-angle-down"></i>
+						</span>
+						<div class="log-ic-box">
+							<span class="n-rev"><i class="fa fa-wrench"></i>14</span>
+							<span class="n-rep"><i class="fa fa-bar-chart"></i>14</span>
+							<span class="n-comm"><i class="fa fa-commenting-o"></i>14</span>
+						</div>
+					</li>
+
+				</ul>
+			</nav>
+
+		</div>
+
+		<!-- Main menu -->
+		<nav class="main-mnu-box">
+			<ul class="main-mnu">                                                      
+				<li><a href="#">О проекте</a></li>
+				<li><a href="#">Блог</a></li>
+				<li><a href="#">Форум</a></li>
+				<li><a href="#">Вопрос-­ответ</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">ЧАВО</a></li>
+				<li><a href="#">Автосервисы</a></li>
+				<li><a href="#">Объявления</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<div class="container">
+		<!-- BREADCRUMBS-->
+		<ul class="main-breadcrumbs">
+			<li><a href="#">Главная</a>&emsp;<i class="fa fa-angle-right"></i>&emsp;</li>
+			<li><a href="#">Личный кабинет</a>&emsp;<i class="fa fa-angle-right"></i>&emsp;</li>
+			<li>Мои сообщения</li>
+		</ul>
+
+	</div> <!-- Container END -->
+
+	<div class="pers-cab-cont-info">
+		<div class="container">
+			<aside class="l-bar">
+				<ul>
+					<li><a href="pers-cab-cont-info.html">Контактная информация</a></li>
+					<li class="messages active"><a href="pers-cab-message.html">Мои сообщения</a> <span class="rew-number">25</span></li>
+					<li class="garage-info"><a href="pers-cab-garage.html">Гараж <i class="fa fa-angle-right"></i></a></li>
+					<li><a href="pers-cab-public-tenders.html">Открытые тендеры</a></li>
+					<li class="ads"><a href="pers-cab-ads.html">Объявления <i class="fa fa-angle-right"></i></a></li>
+					<li><a href="pers-cab-settings.html">Настройки</a></li>
+					<li><a href="pers-cab-view-profile.html">Просмотр профиля</a></li>
+				</ul>
+			</aside>
+
+
+			<div class="main-cont">
+				<!-- User Info -->
+				<div class="user-info clearfix">		
+					<form action="#" class="msg-filter">
+						<select name="msg-f-s" id="msg-f-s" class="msg-f-s">
+							<option selected="selected">Все переписки</option>
+							<option>Все переписки-2</option>
+							<option>Все переписки-3</option>
+							<option>Все переписки-4</option>
+						</select>
+					</form>
+
+					<ul class="user-data">
+						<li>Тип аккаунта: <span class="type-akk">Автолюбитель</span></li>
+						<li class="pers-rate">Ретинг: <span class="number">14</span>&ensp;<i class="fa fa-bar-chart"></i></li>
+						<li class="ref-rate"><a href="#">что такое рейтинг?</a></li>
+					</ul>
+				</div>
+
+				<div class="message-box">
+					<div class="message-sort">
+						<span class="msg-sender">Отправитель</span>
+						<span class="msg-topic">Тема</span>
+
+						<span class="msg-pick-all">
+							<span class="check-off on"></span>
+							<span class="checked hidd"></span>
+						</span>
+						<span class="msg-quant">Сообщений</span>
+						<span class="msg-sent">Отправлено</span>
+					</div>
+
+					<!-- Messages wrap -->
+					<div class="message-list">
+
+						<!-- Message -->
+						<div class="msg-item">
+							
+							<a href="#" class="img-wrap"><img src="img/adv-photo.jpg" alt="Alt"></a>
+							
+							<ul class="msg-sender-info">
+								<li class="sender-name"><a href="#">Яна Перовская</a></li>
+								<li class="sender-email"><a href="#">yanaperovska</a></li>
+							</ul>
+
+							<span class="topic-cont">
+								<a href="#" class="topic-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+								<a href="#"><i class="envel"></i></a>
+								<a href="#"><i class="fa fa-wrench"></i></a>
+							</span>
+
+							<span class="msg-number">5</span>
+
+							<ul class="msg-date">
+								<li>2 марта</li>
+								<li>12:36</li>
+							</ul>
+
+							<span class="msg-pick"></span>
+
+						</div>
+
+						<div class="msg-item">
+							
+							<a href="#" class="img-wrap"><img src="img/adv-photo.jpg" alt="Alt"></a>
+							
+							<ul class="msg-sender-info">
+								<li class="sender-name"><a href="#">Яна Перовская</a></li>
+								<li class="sender-email"><a href="#">yanaperovska</a></li>
+							</ul>
+
+							<span class="topic-cont">
+								<a href="#" class="topic-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+								<a href="#"><i class="envel"></i></a>
+								<a href="#"><i class="fa fa-wrench"></i></a>
+							</span>
+
+							<span class="msg-number">5</span>
+
+							<ul class="msg-date">
+								<li>2 марта</li>
+								<li>12:36</li>
+							</ul>
+
+							<span class="msg-pick"></span>
+
+						</div>
+
+						<div class="msg-item">
+							
+							<a href="#" class="img-wrap"><img src="img/adv-photo.jpg" alt="Alt"></a>
+							
+							<ul class="msg-sender-info">
+								<li class="sender-name"><a href="#">Яна Перовская</a></li>
+								<li class="sender-email"><a href="#">yanaperovska</a></li>
+							</ul>
+
+							<span class="topic-cont">
+								<a href="#" class="topic-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+								<a href="#"><i class="envel"></i></a>
+								<a href="#"><i class="fa fa-wrench"></i></a>
+							</span>
+
+							<span class="msg-number">5</span>
+
+							<ul class="msg-date">
+								<li>2 марта</li>
+								<li>12:36</li>
+							</ul>
+
+							<span class="msg-pick"></span>
+
+						</div>
+
+						<div class="msg-item">
+							
+							<a href="#" class="img-wrap"><img src="img/adv-photo.jpg" alt="Alt"></a>
+							
+							<ul class="msg-sender-info">
+								<li class="sender-name"><a href="#">Яна Перовская</a></li>
+								<li class="sender-email"><a href="#">yanaperovska</a></li>
+							</ul>
+
+							<span class="topic-cont">
+								<a href="#" class="topic-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+								<a href="#"><i class="envel"></i></a>
+								<a href="#"><i class="fa fa-wrench"></i></a>
+							</span>
+
+							<span class="msg-number">5</span>
+
+							<ul class="msg-date">
+								<li>2 марта</li>
+								<li>12:36</li>
+							</ul>
+
+							<span class="msg-pick"></span>
+
+						</div>
+
+						<div class="msg-item">
+							
+							<a href="#" class="img-wrap"><img src="img/adv-photo.jpg" alt="Alt"></a>
+							
+							<ul class="msg-sender-info">
+								<li class="sender-name"><a href="#">Яна Перовская</a></li>
+								<li class="sender-email"><a href="#">yanaperovska</a></li>
+							</ul>
+
+							<span class="topic-cont">
+								<a href="#" class="topic-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+								<a href="#"><i class="envel"></i></a>
+								<a href="#"><i class="fa fa-wrench"></i></a>
+							</span>
+
+							<span class="msg-number">5</span>
+
+							<ul class="msg-date">
+								<li>2 марта</li>
+								<li>12:36</li>
+							</ul>
+
+							<span class="msg-pick"></span>
+
+						</div>
+
+						<div class="msg-item">
+							
+							<a href="#" class="img-wrap"><img src="img/adv-photo.jpg" alt="Alt"></a>
+							
+							<ul class="msg-sender-info">
+								<li class="sender-name"><a href="#">Яна Перовская</a></li>
+								<li class="sender-email"><a href="#">yanaperovska</a></li>
+							</ul>
+
+							<span class="topic-cont">
+								<a href="#" class="topic-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+								<a href="#"><i class="envel"></i></a>
+								<a href="#"><i class="fa fa-wrench"></i></a>
+							</span>
+
+							<span class="msg-number">5</span>
+
+							<ul class="msg-date">
+								<li>2 марта</li>
+								<li>12:36</li>
+							</ul>
+
+							<span class="msg-pick"></span>
+
+						</div>
+
+						<div class="msg-item">
+							
+							<a href="#" class="img-wrap"><img src="img/adv-photo.jpg" alt="Alt"></a>
+							
+							<ul class="msg-sender-info">
+								<li class="sender-name"><a href="#">Яна Перовская</a></li>
+								<li class="sender-email"><a href="#">yanaperovska</a></li>
+							</ul>
+
+							<span class="topic-cont">
+								<a href="#" class="topic-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+								<a href="#"><i class="envel"></i></a>
+								<a href="#"><i class="fa fa-wrench"></i></a>
+							</span>
+
+							<span class="msg-number">5</span>
+
+							<ul class="msg-date">
+								<li>2 марта</li>
+								<li>12:36</li>
+							</ul>
+
+							<span class="msg-pick"></span>
+
+						</div>
+						<!-- Message END -->
+
+					</div>
+
+					<div class="mess-bottom-line">
+						<nav>
+							<ul class="pagination">
+								<li class="prev"><a href="#"><i class="fa fa-angle-left"></i></a></li>
+								<li><a href="#">1</a></li>
+								<li class="active"><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">6</a></li>
+								<li><a href="#">7</a></li>
+								<li class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li>
+							</ul>
+						</nav>
+
+						<a href="#" class="basic-btn btn-small">Удалить выделенные</a>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="main-foot clearfix">
+
+				<div class="f-info-item">
+					<h5>О нас</h5>
+					<ul>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">dolor sit amet,</a></li>
+						<li><a href="#">consectetur</a></li>
+						<li><a href="#">adipisicing elit,</a></li>
+						<li><a href="#">sed do eiusmod</a></li>
+					</ul>
+				</div>
+
+				<div class="f-info-item">
+					<h5>Связь с нами</h5>
+					<ul>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">dolor sit amet,</a></li>
+						<li><a href="#">consectetur</a></li>
+						<li><a href="#">adipisicing elit,</a></li>
+						<li><a href="#">sed do eiusmod</a></li>
+					</ul>
+				</div>
+
+				<div class="f-info-item">
+					<h5>Автосервисам</h5>
+					<ul>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">dolor sit amet,</a></li>
+						<li><a href="#">consectetur</a></li>
+						<li><a href="#">adipisicing elit,</a></li>
+						<li><a href="#">sed do eiusmod</a></li>
+					</ul>
+				</div>
+
+				<div class="f-info-item">
+					<h5>Информация</h5>
+					<ul>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">dolor sit amet,</a></li>
+						<li><a href="#">consectetur</a></li>
+						<li><a href="#">adipisicing elit,</a></li>
+						<li><a href="#">sed do eiusmod</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="f-bottom-line clearfix">
+
+				<div class="copy">
+					<h5>"Название"</h5>
+					<p>все права защищены</p>
+				</div>
+
+				<div class="f-soc-box">
+					<ul>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-vk"></i></a></li>
+					</ul>
+				</div>
+
+				<div class="f-phones">
+					<p>Звонки по России бесплатно <br>+7 (495) 937 - 99- 92-99</p>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/jquery-ui/jquery-ui.min.js"></script>
+	
+	<script src="js/common.js"></script>
+	
+</body>
+</html>

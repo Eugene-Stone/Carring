@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Обьявление</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/jquery.flexslider/flexslider.css">
+	<!-- <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.css"> -->
+
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+	<header class="head">
+		<div class="container">
+			<!-- LOGO -->
+			<div class="logo-block">
+				<div class="logo-wrap">
+					<a href=""><img src="img/logo.png" alt="Carring"></a>
+				</div>
+
+				<form action="#" class="location">
+					<select name="location" id="location">
+						<option selected="selected">Москва</option>
+						<option>Питер</option>
+					</select>
+				</form>
+
+			</div>
+
+			<!-- Main menu button-->
+			<div class="main-mnu-btn">
+				<span class="toggle-mnu"><span></span></span>
+				<span>Меню</span>
+			</div>
+
+			<!-- The Registration Menu -->
+			<nav class="reg-mnu">
+				<ul>
+					<li class="active">
+						<a class="a-service" href="#"><i class="fa fa-plus-circle"></i> Автосервисам</a>
+					</li>
+					<li><a href="#">Разместить заявку на ремонт</a></li>
+					<li><a href="#">Как это работает?</a></li>
+					<li><a href="#"><i class="fa fa-search"></i> Заказы</a></li>
+					<li>
+						<a class="reg" href="#">Регистрация&ensp;</a> |
+						<a class ="entr" href="#">Вход&ensp;</a>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+
+		<!-- Main menu -->
+		<nav class="main-mnu-box">
+			<ul class="main-mnu">                                                      
+				<li><a href="#">О проекте</a></li>
+				<li><a href="#">Блог</a></li>
+				<li><a href="#">Форум</a></li>
+				<li><a href="#">Вопрос-­ответ</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">ЧАВО</a></li>
+				<li><a href="#">Автосервисы</a></li>
+				<li><a href="#">Объявления</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<!-- Search Block -->
+	<div class="container serch-block">	
+		<form action="#" class="adv-search">
+			
+			<div class="srch-panel">
+				<select name="spares" class="spares" id="spares">
+					<option selected="selected">Запчасти и аксессуары</option>
+					<option>Запчасть-1</option>
+					<option>Запчасть-2</option>
+					<option>Запчасть-3</option>
+					<option>Запчасть-4</option>
+					<option>Запчасть-5</option>
+				</select>
+
+				<input type="search" placeholder="Поиск по объявлениям">
+
+				<select name="all-russ" class="all-russ" id="all-russ">
+					<option selected="selected">По всей России</option>
+					<option>Город-1</option>
+					<option>Город-2</option>
+					<option>Город-3</option>
+					<option>Город-4</option>
+					<option>Город-5</option>
+				</select>
+
+				<input type="submit" value="Найти">
+			</div>
+
+			<div class="check">
+				<label>
+					<input type="checkbox" name="only-name" value="yes" checked>искать только в названиях
+				</label>
+				<label>
+					<input type="checkbox" name="only-photo" value="yes" checked>только с фото
+				</label>
+			</div>
+
+			<select name="view-prod" class="view-prod" id="view-prod">
+				<option selected="selected">Вид товара</option>
+				<option>Вид товара-1</option>
+				<option>Вид товара-2</option>
+				<option>Вид товара-3</option>
+				<option>Вид товара-4</option>
+				<option>Вид товара-5</option>
+			</select>
+
+		</form>
+
+		<!-- BREADCRUMBS-->
+		<div class="container breadcrumbs-box">
+			<ul class="breadcrumbs clearfix">
+				<li><a href="#">Все объявления в России </a>&emsp;/&emsp;</li>
+				<li><a href="#">Транспорт</a>&emsp;/&emsp;</li>
+				<li><a href="#">Запчасти и аксессуары <span class="count-found">7 895 056</span></a>&emsp;/&emsp;</li>
+				<li>Бампер на БМВ</li>
+			</ul>
+
+			<ul class="links-advert">
+				<li><a href="#" class="catalog">В каталог</a>&emsp;</li>
+				<li><a href="#" class="next-advert">Следующее&ensp;<i class="fa fa-angle-right"></i></a></li>
+			</ul>
+
+		</div>
+	</div>
+
+	<!-- Advertisement Block -->
+	<div class="advertisement-wrap">
+
+		<div class="container">
+			<div class="adv-title">
+				<h1>Бампер на БМВ</h1>
+				<span>Размещено 
+					<span class="date-publish">сегодня в 14:57.</span>
+				</span>
+				<span>
+					<a href="#" class="edit" >Редактировать</a>, 
+					<a href="#" class="close" >закрыть</a>, 
+					<a href="#" class="pick-up" >поднять</a> 
+					объявление
+				</span>
+			</div>
+			<div class="views">
+				<span>Просмотров: 
+					всего <span class="all-view">239</span>, 
+					сегодня <span class="todey-view">50</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="advert">
+				<div class="adv-photo-wrap clearfix">
+					<div class="flexslider">
+						<ul class="slides">
+							<li data-thumb="img/adv-photo.jpg">
+								<img src="img/adv-photo.jpg" alt="Photo-serv">
+							</li>
+							<li data-thumb="img/adv-photo.jpg">
+								<img src="img/adv-photo.jpg" alt="Photo-serv">
+							</li>
+							<li data-thumb="img/adv-photo.jpg">
+								<img src="img/adv-photo.jpg" alt="Photo-serv">
+							</li>
+							<li data-thumb="img/adv-photo.jpg">
+								<img src="img/adv-photo.jpg" alt="Photo-serv">
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="adv-descr">
+					<ul class="adv-price-box">
+						<li>
+							Цена:
+							<span class="price">2 500 руб.</span>
+						</li>
+					</ul>
+
+					<ul class="adv-contact">
+						<li>
+							<span>Продавец: </span>
+							<a href="#" class="adv-name">Владимир</a>
+						</li>
+						<li>
+							<span>Телефон: </span>
+							<span class="adv-phone">
+								<a href="#" class="adv-phone-hidd">Показать телефон</a>
+								<span class="adv-phone-on">+79054545425</span>
+							</span>
+						</li>
+						<li>
+							<span>Город: </span>
+							<a href="#" class="adv-city">Москва</a>
+						</li>
+						<li>
+							<span>Почта: </span>
+							<span class="adv-pos">
+								<a href="#" class="adv-pos-hidd">Показать почту</a>
+								<a href="mailto:post@mail.ru" class="adv-pos-on">post@mail.ru</a>
+							</span>
+						</li>
+					</ul>
+
+					<div class="adv-specific">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+					</div>
+
+					<p class="announc-number">Номер объявления: <a href="#">743153145</a></p>
+
+				</div>
+
+				<!-- Related Ads -->
+				<div class="sim-adv">
+
+					<h5>Похожие объявления:</h5>
+					
+					<div class="sim-adv-item">
+						<div class="img-wrap">
+							<a href="advertisement.html"><img src="img/adv-photo.jpg" alt="adv-photo"></a>
+						</div>
+
+						<ul class="sim-adv-descr">
+							<li><a href="#">Комплект </a></li>
+							<li><a href="#">ученический. Парта</a></li>
+							<li><a href="#">+ 2 стула</a></li>
+							<li><a href="#">1 500 р.</a></li>
+						</ul>
+					</div>
+
+					<div class="sim-adv-item">
+						<div class="img-wrap">
+							<a href="advertisement.html"><img src="img/adv-photo.jpg" alt="adv-photo"></a>
+						</div>
+
+						<ul class="sim-adv-descr">
+							<li><a href="#">Комплект </a></li>
+							<li><a href="#">ученический. Парта</a></li>
+							<li><a href="#">+ 2 стула</a></li>
+							<li><a href="#">1 500 р.</a></li>
+						</ul>
+					</div>
+
+					<div class="sim-adv-item">
+						<div class="img-wrap">
+							<a href="advertisement.html"><img src="img/adv-photo.jpg" alt="adv-photo"></a>
+						</div>
+
+						<ul class="sim-adv-descr">
+							<li><a href="#">Комплект </a></li>
+							<li><a href="#">ученический. Парта</a></li>
+							<li><a href="#">+ 2 стула</a></li>
+							<li><a href="#">1 500 р.</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="banners">
+				<a href="#"><img src="img/banner.png" alt="Banner"></a>
+				<a href="#"><img src="img/banner.png" alt="Banner"></a>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="main-foot clearfix">
+
+				<div class="f-info-item">
+					<h5>О нас</h5>
+					<ul>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">dolor sit amet,</a></li>
+						<li><a href="#">consectetur</a></li>
+						<li><a href="#">adipisicing elit,</a></li>
+						<li><a href="#">sed do eiusmod</a></li>
+					</ul>
+				</div>
+
+				<div class="f-info-item">
+					<h5>Связь с нами</h5>
+					<ul>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">dolor sit amet,</a></li>
+						<li><a href="#">consectetur</a></li>
+						<li><a href="#">adipisicing elit,</a></li>
+						<li><a href="#">sed do eiusmod</a></li>
+					</ul>
+				</div>
+
+				<div class="f-info-item">
+					<h5>Автосервисам</h5>
+					<ul>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">dolor sit amet,</a></li>
+						<li><a href="#">consectetur</a></li>
+						<li><a href="#">adipisicing elit,</a></li>
+						<li><a href="#">sed do eiusmod</a></li>
+					</ul>
+				</div>
+
+				<div class="f-info-item">
+					<h5>Информация</h5>
+					<ul>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">dolor sit amet,</a></li>
+						<li><a href="#">consectetur</a></li>
+						<li><a href="#">adipisicing elit,</a></li>
+						<li><a href="#">sed do eiusmod</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="f-bottom-line clearfix">
+
+				<div class="copy">
+					<h5>"Название"</h5>
+					<p>все права защищены</p>
+				</div>
+
+				<div class="f-soc-box">
+					<ul>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-vk"></i></a></li>
+					</ul>
+				</div>
+
+				<div class="f-phones">
+					<p>Звонки по России бесплатно <br>+7 (495) 937 - 99- 92-99</p>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/jquery-ui/jquery-ui.min.js"></script>
+	<script src="libs/jquery.flexslider/jquery.flexslider-min.js"></script>
+
+	<script>
+		// Slider
+		$(".flexslider").flexslider({
+			animation: "fade",
+			controlNav: "thumbnails",
+			directionNav: false,
+		});
+	</script>
+	
+	<script src="js/common.js"></script>
+	
+</body>
+</html>

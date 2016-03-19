@@ -1,0 +1,247 @@
+.ui-selectmenu-menu
+	.ui-menu
+		padding-bottom: 0 !important
+fieldset
+	border: none
+	padding: 0
+	margin: 0
+
+ol, ul
+	list-style: none
+*
+	margin: 0
+	padding: 0
+	outline: none
+	box-sizing: border-box
+
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after
+	content: " "
+	display: table
+
+.clearfix:after
+	clear: both
+
+.before
+	content:''
+	width: 100%
+	height: 100%
+	position: absolute
+.after
+	content:''
+	position: absolute
+	width: 100%
+	height: 100%
+// Values Unchanged END
+
+
+// The Variables Styles
+$title-color: #000
+$main-color: #216296
+$text-color: #000
+
+body
+	position: relative
+	min-width: 320px
+	font-family: "OpenSansLight", $helvetica
+	font-size: 18px
+	line-height: 1.3em
+	font-weight: normal
+	color: $text-color
+	-webkit-font-smoothing: antialiased
+	// overflow-x: hidden
+
+	*
+		animation-duration: 1.5s !important
+
+.container,
+.container-s
+	@extend .clearfix
+	position: relative
+	margin: auto
+	width: 100%
+	width: 1170px
+	// box-shadow: 1px 0 0 0 red, -1px 0 0 0 red
+.container-s
+	width: 1030px
+.hidden
+	display: none
+
+.left
+	float: left
+
+.right
+	float: right
+
+
+/* Title */
+h1
+	font-family: "OpenSansRegular", sans-serif
+	font-size: 38px
+	line-height: 1em
+	color: #fff
+
+h2
+	font-family: "OpenSansLight", sans-serif
+	font-size: 38px
+	color: $title-color
+
+h3
+	font-family: "OpenSansSemiBold", sans-serif
+	font-size: 30px
+	color: $title-color
+
+h4
+	font-family: "OpenSansRegular", sans-serif
+	font-size: 22px
+	color: $title-color
+	font-weight: normal
+
+h5 // Футер
+	font-family: "OpenSansLight", sans-serif
+	font-size: 20px
+	line-height: 1em
+	font-weight: normal
+	color: #bdbdbd
+
+
+.title-after
+	width: 65px
+	height: 2px
+	left: 0
+	bottom: -30px
+	background-color: $main-color
+
+
+//	/* Obligatory filling fields */
+//	body input:focus:required:invalid,
+//	body textarea:focus:required:invalid
+//		color: red
+
+//	body input:required:valid,
+//	body textarea:required:valid
+//		color: green
+//	/* Obligatory filling fields END*/
+
+
+// /* Placeholder */
+// ::-webkit-input-placeholder
+// 	color: #9b9ea3
+// 	font-size-adjust: 13px
+// 	opacity: 1
+// 
+// :-moz-placeholder
+// 	color: #9b9ea3
+// 	font-size-adjust: 13px
+// 	opacity: 1
+// 
+// ::-moz-placeholder
+// 	color: #9b9ea3
+// 	font-size-adjust: 13px
+// 	opacity: 1
+// 
+// :-ms-input-placeholder
+// 	color: #9b9ea3
+// 	font-size-adjust: 13px
+// 	opacity: 1
+// /* Placeholder END*/
+
+
+/* The Properties Of The Button */
+.button-wrap
+	text-align: center
+.basic-btn
+	display: inline-block
+	padding: 0 28px
+	background-color: #a1cc14
+	font-family: "OpenSansRegular", sans-serif
+	font-size: 21px
+	line-height: 120px
+	font-weight: bold
+	text-transform: uppercase
+	text-decoration: none
+	color: #fff
+	transition: all .25s ease
+	border: none
+	cursor: pointer
+	box-shadow: inset 0 -5px 0 0 #80a112
+	&:hover
+		background-color: lighten(#a1cc14, 5%) 
+		color: #fff
+		text-decoration: none
+	&:active
+		color: #fff
+		text-decoration: none
+		background-color: darken(#a1cc14, 2%) 
+	&:focus
+		color: #fff
+		text-decoration: none
+.btn-transparent
+	padding: 27px 40px 25px
+	background-color: transparent
+	border: 2px solid #000
+	font-family: "OpenSansLight", sans-serif
+	font-size: 24px
+	text-transform: none
+	text-decoration: underline
+	color: $text-color
+	line-height: 1em
+	box-shadow: none
+	&:hover,
+	&:focus,
+	&:active
+		background-color: transparent
+		color: $text-color
+		text-decoration: none
+
+.btn-small
+	padding: 8px 32px 8px 28px
+	font-family: "OpenSansLight", sans-serif
+	font-size: 17px
+	line-height: 1em
+	text-transform: none
+	color: #fff
+	background-color: $main-color
+	box-shadow: none
+	&:hover
+		background-color: lighten($main-color, 8%) 
+	&:active
+		background-color: darken($main-color, 2%) 
+/* The Properties Of The Button END*/
+
+/* Button Drop Down Menu */
+.toggle-mnu
+	position: relative
+	display: inline-block
+	text-align: center
+	text-decoration: none
+	width: 25px
+	height: 22px
+	cursor: pointer
+
+.toggle-mnu span:after,
+.toggle-mnu span:before
+	content: ""
+	position: absolute
+	left: 0
+	top: -8px
+
+.toggle-mnu span:after
+	top: 8px
+
+.toggle-mnu span
+	position: relative
+	top: 67%
+	display: block
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before
+	width: 100%
+	height: 5px
+	background-color: #c3c3c3
+	transition: all 0.3s
+	backface-visibility: hidden
+/* Button Drop Down Menu END */
