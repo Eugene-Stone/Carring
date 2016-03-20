@@ -55,21 +55,26 @@ ol, ul {
 .pers-data .u-phone-wrap:before,
 .message-sort:before,
 .msg-item:before,
-.mess-bottom-line:before,
+.tndr-bet:before, .mess-bottom-line:before,
+.car-item:before,
+.car-attrib li:before,
+.tndr-title:before,
+.tndr-cont:before,
+.msg-info:before,
 .clearfix:after, .container:after,
 .container-s:after, .main-breadcrumbs:after, .car-serv-prof:after, .car-info li:after, .l-bar li:after, .pers-data label:after,
-.pers-data .u-phone-wrap:after, .message-sort:after, .msg-item:after, .mess-bottom-line:after {
+.pers-data .u-phone-wrap:after, .message-sort:after, .msg-item:after, .tndr-bet:after, .mess-bottom-line:after, .car-item:after, .car-attrib li:after, .tndr-title:after, .tndr-cont:after, .msg-info:after {
   content: " ";
   display: table;
 }
 
 .clearfix:after, .container:after,
 .container-s:after, .main-breadcrumbs:after, .car-serv-prof:after, .car-info li:after, .l-bar li:after, .pers-data label:after,
-.pers-data .u-phone-wrap:after, .message-sort:after, .msg-item:after, .mess-bottom-line:after {
+.pers-data .u-phone-wrap:after, .message-sort:after, .msg-item:after, .tndr-bet:after, .mess-bottom-line:after, .car-item:after, .car-attrib li:after, .tndr-title:after, .tndr-cont:after, .msg-info:after {
   clear: both;
 }
 
-.before, .main-slider .slide::before {
+.before, .main-slider .slide::before, .tndr-title .price-tndr::before {
   content: '';
   width: 100%;
   height: 100%;
@@ -1625,6 +1630,7 @@ footer {
 }
 
 .breadcrumbs li a, .links-advert li a, .main-breadcrumbs li a {
+  display: inline-block;
   color: inherit;
 }
 
@@ -2742,7 +2748,7 @@ footer {
 }
 
 .l-bar,
-.main-cont, .main-cont-gar {
+.main-cont, .main-cont-gar, .main-cont-tenders, .correspondence-box {
   float: left;
   background-color: #f1f1f1;
 }
@@ -2808,15 +2814,18 @@ footer {
   display: inline-block;
   vertical-align: middle;
   float: right;
+  padding: 0 2px;
   margin-right: -5px;
   font-size: 12px;
   line-height: 20px;
-  width: 20px;
-  height: 20px;
+  width: auto;
+  height: auto;
+  min-width: 20px;
+  min-height: 20px;
 }
 
 /* Main-Container */
-.main-cont, .main-cont-gar {
+.main-cont, .main-cont-gar, .main-cont-tenders, .correspondence-box {
   width: -webkit-calc(100% - 220px);
   width: -moz-calc(100% - 220px);
   width: calc(100% - 220px);
@@ -3196,16 +3205,22 @@ footer {
 }
 
 /* MESSAGE */
-.msg-item {
+.msg-item, .tndr-bet {
   margin-bottom: 4px;
   padding: 5px 5px 0;
+  -webkit-transition: all 0.2s ease;
+     -moz-transition: all 0.2s ease;
+       -o-transition: all 0.2s ease;
+          transition: all 0.2s ease;
 }
 
-.msg-item.active {
+.msg-item.active,
+.active.tndr-bet,
+.msg-item:hover, .tndr-bet:hover {
   background-color: #dae5ee;
 }
 
-.msg-item .img-wrap {
+.msg-item .img-wrap, .tndr-bet .img-wrap {
   margin-right: 16px;
   display: inline-block;
   width: 80px;
@@ -3213,12 +3228,12 @@ footer {
   overflow: hidden;
 }
 
-.msg-item .img-wrap img {
+.msg-item .img-wrap img, .tndr-bet .img-wrap img {
   width: auto;
   height: 100%;
 }
 
-.msg-item .msg-sender-info {
+.msg-item .msg-sender-info, .tndr-bet .msg-sender-info, .tndr-bet .bet-sender-info {
   margin-right: 25px;
   display: inline-block;
   vertical-align: top;
@@ -3226,23 +3241,23 @@ footer {
   color: #3d96d0;
 }
 
-.msg-item .msg-sender-info a {
+.msg-item .msg-sender-info a, .tndr-bet .msg-sender-info a, .tndr-bet .bet-sender-info a {
   color: inherit;
   text-decoration: none;
 }
 
-.msg-item .msg-sender-info .sender-email {
+.msg-item .msg-sender-info .sender-email, .tndr-bet .msg-sender-info .sender-email, .tndr-bet .bet-sender-info .sender-email {
   color: #000;
 }
 
-.msg-item .topic-cont {
+.msg-item .topic-cont, .tndr-bet .topic-cont {
   margin-right: 40px;
   display: inline-block;
   vertical-align: top;
   font-size: 12px;
 }
 
-.msg-item .topic-cont a.topic-text {
+.msg-item .topic-cont a.topic-text, .tndr-bet .topic-cont a.topic-text {
   padding-top: 15px;
   display: inline-block;
   min-height: 60px;
@@ -3250,13 +3265,17 @@ footer {
   text-decoration: none;
 }
 
-.msg-item .topic-cont .fa {
+.msg-item .topic-cont a.topic-text:hover, .tndr-bet .topic-cont a.topic-text:hover {
+  text-decoration: underline;
+}
+
+.msg-item .topic-cont .fa, .tndr-bet .topic-cont .fa {
   margin-left: 5px;
   font-size: 15px;
   color: #6a95b8;
 }
 
-.msg-item .topic-cont .envel {
+.msg-item .topic-cont .envel, .tndr-bet .topic-cont .envel {
   margin-left: 5px;
   display: inline-block;
   margin-top: -5px;
@@ -3315,7 +3334,7 @@ footer {
   float: left;
 }
 
-/* ========================================== Personal Cabinet Garage Page ========================================== */
+/* ================================== Personal Cabinet Garage Page ================================== */
 .main-cont-gar {
   background-color: #fff;
 }
@@ -3331,7 +3350,541 @@ footer {
 }
 
 .car-item {
+  margin-bottom: 50px;
+  padding: 20px 35px;
   background-color: #f1f1f1;
+}
+
+.car-item:last-child {
+  margin-bottom: 0;
+}
+
+.car-descr {
+  float: left;
+}
+
+/* Name of car */
+.car-title {
+  margin-bottom: 30px;
+  font-family: "OpenSansRegular", sans-serif;
+  color: rgba(0, 0, 0, 0.78);
+}
+
+.car-title .car-numb {
+  font-size: 21px;
+}
+
+.car-title h4 {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.car-attrib li {
+  margin-bottom: 18px;
+  position: relative;
+  max-width: 290px;
+  font-family: "OpenSansRegular", sans-serif;
+  color: rgba(0, 0, 0, 0.67);
+}
+
+.car-attrib li > span {
+  width: 145px;
+}
+
+.car-attrib li > span.right {
+  color: #000;
+}
+
+.car-ch,
+.car-del,
+.car-cr-tndr {
+  margin-right: 19px;
+  display: inline-block;
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 14px;
+  line-height: 1em;
+  color: #59b1e4;
+  -webkit-transition: all 0.25s ease;
+     -moz-transition: all 0.25s ease;
+       -o-transition: all 0.25s ease;
+          transition: all 0.25s ease;
+}
+
+.car-ch:hover,
+.car-del:hover,
+.car-cr-tndr:hover {
+  text-decoration: none;
+}
+
+.car-cr-tndr {
+  padding: 5px 8px;
+  background-color: #216296;
+  color: #fff;
+  text-decoration: none;
+}
+
+.car-cr-tndr:hover {
+  background-color: #2878b7;
+}
+
+.car-cr-tndr:active {
+  background-color: #1f5d8e;
+}
+
+/* Car Photo */
+.car-photo {
+  float: right;
+  text-align: center;
+}
+
+.car-photo .img-wrap {
+  width: 100%;
+  max-width: 260px;
+  max-height: 205px;
+  overflow: hidden;
+}
+
+.car-photo .img-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+.add-photo {
+  display: inline-block;
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 14px;
+  line-height: 1em;
+  color: #338bcd;
+}
+
+.add-photo:hover {
+  text-decoration: none;
+}
+
+/* =============================== Personal Cabinet My Tenders Page ============================== */
+.main-cont-tenders {
+  background-color: #fff;
+}
+
+.o-tndr-item {
+  margin-bottom: 40px;
+  padding: 15px 30px;
+  background-color: #f1f1f1;
+}
+
+.o-tndr-item:last-child {
+  margin-bottom: 0;
+}
+
+.tndr-title .main-breadcrumbs {
+  position: relative;
+  left: -15px;
+  float: left;
+  width: auto;
+}
+
+.tndr-title .main-breadcrumbs li {
+  font-size: 18px;
+}
+
+.tndr-title .main-breadcrumbs .car-logo {
+  margin-right: 15px;
+  width: 95px;
+  height: 95px;
+  margin-top: -35px;
+  overflow: hidden;
+}
+
+.tndr-title .main-breadcrumbs .car-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.tndr-title .price-tndr {
+  position: relative;
+  top: 15px;
+  padding: 0 35px;
+  float: right;
+  display: inline-block;
+  height: 37px;
+  font-size: 21px;
+  line-height: 37px;
+  color: #fff;
+  background-color: #a1cc14;
+}
+
+.tndr-title .price-tndr i {
+  position: absolute;
+  top: 50%;
+  left: -7px;
+  margin-top: -4px;
+  font-size: 8px;
+  vertical-align: middle;
+}
+
+.tndr-title .price-tndr::before {
+  left: -48px;
+  top: 0;
+  width: 25px;
+  height: 0;
+  border-top: 19px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-right: 23px solid #a1cc14;
+}
+
+.tndr-cont .tndr-descr {
+  float: left;
+  padding-top: 15px;
+  padding-right: 15px;
+  width: 100%;
+  max-width: 740px;
+  font-size: 16px;
+  line-height: 1.15em;
+}
+
+.tndr-cont .tndr-photo {
+  float: right;
+  max-width: 125px;
+}
+
+.tndr-cont .tndr-photo .img-wrap {
+  margin-bottom: 3px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.tndr-cont .tndr-photo .img-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+/* ACCORDION Tender Bets */
+.tndr-bets .ui-accordion-header {
+  padding: 0;
+  padding-left: 40px;
+  margin: 0;
+  margin-bottom: 15px;
+  border: none;
+  background-color: inherit;
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 18px;
+}
+
+.tndr-bets .ui-accordion-header .ui-accordion-header-icon {
+  margin: 0;
+  top: -1px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/ic-set.png");
+  background-position: center -1583px;
+}
+
+.tndr-bets .ui-accordion-header-active .ui-accordion-header-icon {
+  background-position: center -1557px;
+}
+
+.tndr-bets .ui-accordion-header.bets-non .ui-accordion-header-icon {
+  opacity: .2;
+}
+
+.tndr-bets .ui-accordion-content {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: auto;
+  background-color: #f1f1f1;
+}
+
+.tndr-bet {
+  white-space: nowrap;
+  padding-bottom: 4px;
+}
+
+.tndr-bet .user-photo {
+  margin-right: 5px;
+  width: 85px;
+  height: 65px;
+  vertical-align: middle;
+}
+
+.tndr-bet .bet-sender-info {
+  vertical-align: middle;
+}
+
+.tndr-bet .bet-sender-info .sender-date {
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 12px;
+  color: #000;
+}
+
+.tndr-bet .bet-sender-info .sender-name {
+  margin-top: 2px;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.tndr-bet .wi-fi {
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 21px;
+}
+
+.tndr-bet .rest-zone {
+  margin-right: 15px;
+}
+
+.tndr-bet .rest-zone .rest-zone-ic {
+  height: 20px;
+  width: 40px;
+  background-position: center -1624px;
+}
+
+.tndr-bet .middle-ic {
+  margin-right: 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tndr-bet .middle-ic .fa {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.tndr-bet .middle-ic > span {
+  margin-right: 15px;
+}
+
+.tndr-bet .middle-ic > span:last-child {
+  margin: 0;
+}
+
+.pers-like i {
+  color: #a1cc14;
+}
+
+.pers-dislike i {
+  color: #d40909;
+}
+
+.bet-term,
+.bet-price,
+.bet-choice {
+  margin-right: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1em;
+}
+
+.bet-term {
+  font-size: 18px;
+}
+
+.bet-price {
+  padding: 0 4px;
+  display: inline-block;
+  height: 24px;
+  font-size: 12px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #a1cc14;
+}
+
+.bet-choice {
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 13px;
+}
+
+.bet-choice a {
+  padding: 0 12px;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #216296;
+}
+
+.bet-choice a:hover {
+  background-color: #2878b7;
+}
+
+.bet-choice a:active {
+  background-color: #1f5d8e;
+}
+
+.bet-u-page .fa {
+  vertical-align: middle;
+  text-align: center;
+  height: 32px;
+  width: 26px;
+  font-size: 24px;
+  line-height: 32px;
+  border: 1px solid #cecece;
+}
+
+.look-more {
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 16px;
+  color: #6aa6d5 !important;
+}
+
+.look-more:hover {
+  text-decoration: none;
+}
+
+/* ======================= Personal Cabinet Message Correspondence Page ====================== */
+.main-breadcrumbs .rew-number {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -3px;
+  padding: 0 2px;
+  margin-left: 3px;
+  font-size: 12px;
+  line-height: 20px;
+  width: auto;
+  height: auto;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.correspondence-box {
+  background-color: #f7f7f7;
+  padding: 15px 25px 55px;
+}
+
+.chat-box {
+  position: relative;
+}
+
+.chat-box h4 {
+  padding-bottom: 9px;
+  font-size: 16px;
+}
+
+.chat-box p {
+  padding-right: 40px;
+  font-size: 12px;
+  line-height: 1.66em;
+}
+
+.msg-box-left,
+.msg-box-right {
+  padding: 5px 10px 15px;
+  margin-bottom: 20px;
+  position: relative;
+  background-color: #e9e9e9;
+}
+
+.msg-box-left:last-child,
+.msg-box-right:last-child {
+  margin-bottom: 0;
+}
+
+.msg-avatar {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+}
+
+.msg-avatar a {
+  display: inline-block;
+}
+
+.msg-avatar img {
+  width: 100%;
+  height: auto;
+}
+
+.msg-user-name {
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 12px;
+  color: #59b1e4;
+}
+
+.msg-user-name a {
+  color: inherit;
+}
+
+.msg-user-name a:hover {
+  text-decoration: none;
+}
+
+.msg-time {
+  font-size: 12px;
+}
+
+.msg-info {
+  margin-bottom: 10px;
+}
+
+.msg-box-left {
+  margin-left: 60px;
+}
+
+.msg-box-left .msg-avatar {
+  left: -70px;
+  top: 0;
+}
+
+.msg-box-left .msg-info .msg-user-name {
+  float: left;
+}
+
+.msg-box-left .msg-info .msg-time {
+  float: right;
+}
+
+.msg-box-right {
+  margin-right: 60px;
+}
+
+.msg-box-right .msg-avatar {
+  right: -70px;
+  top: 0;
+}
+
+.msg-box-right .msg-info .msg-user-name {
+  float: left;
+}
+
+.msg-box-right .msg-info .msg-time {
+  float: right;
+}
+
+.attachment {
+  margin-top: 10px;
+}
+
+.attachment img {
+  display: inline-block;
+  max-width: 69px;
+}
+
+.attachment .title-att {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  color: #000;
+}
+
+.attachment .title-att:hover {
+  text-decoration: underline;
+}
+
+.attachment .fa {
+  margin-right: 5px;
+  vertical-align: middle;
+  font-size: 20px;
+  color: #c7d4e0;
+  -webkit-transform: rotate(44deg);
+     -moz-transform: rotate(44deg);
+      -ms-transform: rotate(44deg);
+       -o-transform: rotate(44deg);
+          transform: rotate(44deg);
 }
 
 /* ============================================= Media Quaries ============================================= */

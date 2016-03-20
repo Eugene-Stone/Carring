@@ -1,17 +1,17 @@
-	$(document).mouseup(function (e){ 
+$(document).mouseup(function (e){ 
 
-		// // Button Drop Down Menu
-		// $(".main-mnu-btn").click(function() {
-		// 	$(".main-mnu-box").fadeIn();
-		// 	$(".home-mnu-box").fadeIn();
-		// 	//$(".top-mnu").slideToggle();
-		// });
-		// 
-		// var div = $(".main-mnu-btn, .main-mnu-box, .home-mnu-box"); // тут указываем ID элемента
-		// if (!div.is(e.target) // если клик был не по нашему блоку
-		// 		&& div.has(e.target).length === 0) { // и не по его дочерним элементам
-		// 		$(".main-mnu-box, .home-mnu-box").fadeOut(); // скрываем его
-		// };
+	// // Button Drop Down Menu
+	// $(".main-mnu-btn").click(function() {
+	// 	$(".main-mnu-box").fadeIn();
+	// 	$(".home-mnu-box").fadeIn();
+	// 	//$(".top-mnu").slideToggle();
+	// });
+	// 
+	// var div = $(".main-mnu-btn, .main-mnu-box, .home-mnu-box"); // тут указываем ID элемента
+	// if (!div.is(e.target) // если клик был не по нашему блоку
+	// 		&& div.has(e.target).length === 0) { // и не по его дочерним элементам
+	// 		$(".main-mnu-box, .home-mnu-box").fadeOut(); // скрываем его
+	// };
 
 	// Russia Map
 	$("area").click(function() {
@@ -29,7 +29,7 @@
 });
 
 
-	$(document).ready(function() {
+$(document).ready(function() {
 
 	// Select
 	$(function() {
